@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    position: relative;
+    display: table;
+    width: 414px;
+    height: 736px;
+    background-color: olive;
+    background-image: url("https://images.pexels.com/photos/1024984/pexels-photo-1024984.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+}
+.conten{
+    animation: doimauchu 2s linear infinite; 
+    position: absolute;
+    z-index: 1;
+    font-size: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+.nut{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    z-index: 999;
+}
+.button{
+    margin: auto;
+    height: 50px;
+    width: 100px;
+    background-color: #FFFFE0	;
+    border-radius: 10px;
+    line-height: 50px;
+    text-align: center;
+}
+span{
+    position: absolute;
+    background: url("../img/heart.png");
+    pointer-events: none;
+    width: 100px;
+    height: 100px;
+    transform: translate(-50%,-50%);
+    animation: animati 2s linear infinite; 
+    background-size: cover;
+}
+@keyframes animati {
+    0% {
+        transform: translate(-50%,-50%);
+        opacity: 1;
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%,-1000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}
+@keyframes doimauchu {
+     0% {
+         color: pink;
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(720deg);
+    }
+}
+.nutYES{
+    animation: nutYES 1s linear forwards; 
+}
+@keyframes nutYES {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.contai{
+    position: relative;
+}
+.video{
+    position:absolute;
+    z-index: 1;
+}
+.chu{
+    font-weight: bold;
+    font-size: 43px;
+    line-height: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    animation: doimauchu 2s linear infinite;
+    position: absolute;
+    z-index: 2;
+    transform:rotate(60deg);
+    margin-top: 230px;
+}
